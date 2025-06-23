@@ -1,0 +1,57 @@
+/* src/components/Footer.css */
+.main-footer {
+  background-color: var(--surface-1);
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0;
+  margin-top: 6rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-logo {
+  height: 40px; /* Atur tinggi logo */
+  width: auto;
+}
+
+.footer-text {
+  text-align: center;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.footer-text p {
+  margin: 0;
+}
+
+.footer-text .role {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.footer-social-link:hover {
+  color: var(--accent-primary);
+  transform: scale(1.1);
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

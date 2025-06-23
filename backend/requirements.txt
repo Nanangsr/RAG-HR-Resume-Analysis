@@ -1,0 +1,28 @@
+# requirements.txt (Final Version)
+
+# Flask Backend
+Flask==3.0.3
+Flask-Cors==4.0.1
+python-dotenv==1.0.0
+
+# LangChain Modern Stack
+langchain-groq
+langchain-community
+langchain-openai
+langchain-text-splitters
+langsmith # Dependensi yang sebelumnya gagal
+
+# Core AI & Vector DB
+torch
+sentence-transformers
+faiss-cpu
+chromadb==0.4.22 # Pinning versi ini karena stabil
+
+# Utilities & Parsing
+python-docx
+pypdf
+PyPDF2
+spacy
+pandas
+numpy<2.0
+pydantic>=2.0.0

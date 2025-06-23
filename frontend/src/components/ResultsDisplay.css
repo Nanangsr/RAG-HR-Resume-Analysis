@@ -1,0 +1,126 @@
+/* src/components/ResultsDisplay.css */
+.results-container {
+  background-color: var(--surface-1);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  overflow: hidden; /* To keep border-radius on children */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tabs-container {
+  display: flex;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-button {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease-in-out;
+}
+
+.tab-button:hover {
+  color: var(--text-primary);
+}
+
+.tab-button.active {
+  color: var(--accent-primary);
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--accent-primary);
+}
+
+.tab-content {
+  padding: 2rem;
+}
+
+.narrative-section h4, .ranking-section h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.narrative-section p {
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 1rem;
+  color: #d0d0d0;
+}
+
+.table-wrapper { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border-color); text-align: left; white-space: nowrap; }
+thead th { font-weight: 600; color: var(--text-secondary); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; position: sticky; top: 0; background-color: #161b22; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover { background-color: rgba(255, 255, 255, 0.03); }
+
+.rank-cell, .score-cell {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.name-cell {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.level-cell {
+  text-transform: capitalize;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.raw-json-details {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.raw-json-details summary {
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.raw-json-details pre {
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.visualization-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .visualization-grid {
+        grid-template-columns: 1fr;
+    }
+}
