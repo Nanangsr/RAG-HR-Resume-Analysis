@@ -1,4 +1,4 @@
-# 📄 Resume Analisis AI
+# 📄 RAG HR Resume Analisis AI
 
 Platform cerdas berbasis web yang dirancang untuk merevolusi proses rekrutmen. Aplikasi ini membantu tim Human Resources (HR) untuk menyederhanakan proses seleksi, memahami kualifikasi kandidat secara mendalam, dan mengambil keputusan berbasis data dengan cepat dan objektif.
 
@@ -17,6 +17,78 @@ Platform ini memungkinkan tim HR untuk:
 -   **Membandingkan beberapa kandidat** secara berdampingan dengan analisis naratif.
 -   **Memahami kandidat lebih dalam** dengan mengajukan pertanyaan spesifik ke CV mereka.
 -   **Mengurangi bias** dalam pengambilan keputusan dan fokus pada kualifikasi objektif.
+
+📂 Struktur Proyek
+Berikut adalah struktur direktori lengkap proyek ini, sesuai dengan lingkungan pengembangan Anda.
+```bash
+/RAG-HR-Resume-Analisis/
+├── backend/
+│   ├── .venv/
+│   ├── __pycache__/
+│   ├── core/
+│   │   ├── __pycache__/
+│   │   ├── comparator.py
+│   │   ├── embedding.py
+│   │   ├── rag_chain.py
+│   │   ├── retriever.py
+│   │   └── scoring.py
+│   ├── data/
+│   │   ├── jobs/
+│   │   └── resumes/
+│   ├── models/
+│   │   ├── __pycache__/
+│   │   ├── __init__.py
+│   │   └── best_resume_scorer.pkl
+│   ├── utils/
+│   │   ├── __pycache__/
+│   │   ├── jd_parser.py
+│   │   ├── name_extractor.py
+│   │   ├── resume_parser.py
+│   │   └── resume_standardizer.py
+│   ├── vector_store/
+│   │   └── chroma/
+│   ├── .env
+│   ├── app.py
+│   ├── initialize_db.py
+│   └── requirements.txt
+│
+└── frontend/
+    ├── node_modules/
+    ├── public/
+    │   ├── hero-image.svg
+    │   └── logo.svg
+    ├── src/
+    │   ├── assets/
+    │   │   ├── datains-logo.png
+    │   │   └── hr-image.jpg
+    │   ├── components/
+    │   │   ├── AnalysisForm.css
+    │   │   ├── AnalysisForm.jsx
+    │   │   ├── DataVisualization.jsx
+    │   │   ├── FeatureCard.css
+    │   │   ├── FeatureCard.jsx
+    │   │   ├── Footer.css
+    │   │   ├── Footer.jsx
+    │   │   ├── Navbar.css
+    │   │   ├── Navbar.jsx
+    │   │   ├── ResultsDisplay.css
+    │   │   └── ResultsDisplay.jsx
+    │   ├── pages/
+    │   │   ├── AnalysisPage.jsx
+    │   │   ├── HomePage.css
+    │   │   └── HomePage.jsx
+    │   ├── utils/
+    │   │   └── export.js
+    │   ├── App.css
+    │   ├── App.jsx
+    │   ├── index.css
+    │   └── main.jsx
+    ├── .gitignore
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    └── vite.config.js
+```
 
 ## ✨ Fitur Utama
 
