@@ -1,8 +1,23 @@
-venv/
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# File Environment Variables
 .env
+.env.*
+!.env.example
+
+# File Database & Data Lokal
+vector_store/
+
+# OS & Editor
 .DS_Store
-*.sqlite3
+.vscode/
