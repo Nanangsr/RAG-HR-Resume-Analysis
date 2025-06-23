@@ -157,12 +157,11 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
         ```bash
         pip install -r requirements.txt
         ```
-    * Siapkan environment variable. Salin `.env.example` menjadi `.env`:
+    * Atur API Key di .env
         ```bash
-        # Untuk Windows:
-        copy .env.example .env
+        GROQ_API_KEY="gsk_xxxxxx" (Dapatkan GROQ API KEY di laman berikut https://console.groq.com/keys)
+        EMBEDDING_MODEL="all-MiniLM-L6-v2"\
         ```
-        Buka file `.env` yang baru dibuat dan masukkan `GROQ_API_KEY` Anda.
 
     * Siapkan data CV. Buat folder `data/resumes` dan letakkan semua file CV (PDF/DOCX) Anda di dalamnya.
 
