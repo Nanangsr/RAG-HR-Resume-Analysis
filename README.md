@@ -160,7 +160,7 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
     * Atur API Key di .env
         ```bash
         GROQ_API_KEY="gsk_xxxxxx" (Dapatkan GROQ API KEY di laman berikut https://console.groq.com/keys)
-        EMBEDDING_MODEL="all-MiniLM-L6-v2"\
+        EMBEDDING_MODEL="all-MiniLM-L6-v2"
         ```
 
     * Siapkan data CV. Buat folder `data/resumes` dan letakkan semua file CV (PDF/DOCX) Anda di dalamnya.
