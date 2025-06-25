@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx (FINAL Content & Layout)
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomePage.css';
@@ -6,7 +5,6 @@ import FeatureCard from '../components/FeatureCard.jsx';
 import { GanttChartSquare, Rows, HelpCircle, SearchCheck } from 'lucide-react';
 import heroImage from '../assets/hr-image.jpg';
 
-// Fitur yang disesuaikan dengan 4 use case Anda
 const features = [
   { icon: <GanttChartSquare />, title: "Skoring & Peringkat Otomatis", text: "Unggah beberapa CV untuk mendapatkan skor relevansi dan peringkat otomatis, mempercepat proses seleksi awal Anda." },
   { icon: <Rows />, title: "Analisis Perbandingan Kandidat", text: "Dapatkan analisis naratif komparatif yang mendalam untuk memahami kekuatan dan kelemahan relatif dari para kandidat top." },
