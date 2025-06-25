@@ -1,5 +1,3 @@
-// src/components/ResultsDisplay.jsx
-
 import React, { useState } from 'react';
 import DataVisualization from './DataVisualization.jsx';
 import { exportToCSV, exportToJSON } from '../utils/export';
