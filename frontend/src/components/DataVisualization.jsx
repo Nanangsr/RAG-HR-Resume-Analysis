@@ -1,5 +1,3 @@
-// src/components/DataVisualization.jsx
-
 import React from 'react';
 import { Bar, Radar } from 'react-chartjs-2';
 import {
