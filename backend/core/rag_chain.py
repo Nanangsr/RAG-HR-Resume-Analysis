@@ -1,4 +1,3 @@
-# backend/core/rag_chain.py (FINAL FULL CODE)
 import asyncio
 import os
 import json
