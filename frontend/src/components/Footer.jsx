@@ -1,11 +1,9 @@
-// src/components/Footer.jsx
 import React from 'react';
 import './Footer.css'; // Kita akan buat file CSS-nya
 import dataInsLogo from '../assets/datains-logo.png'; // Impor logo
 import { Linkedin } from 'lucide-react'; // Impor ikon LinkedIn
 
 const Footer = () => {
-  // Ganti dengan nama dan URL LinkedIn Anda
   const yourName = "Nanang Safiu Ridho";
   const yourLinkedinUrl = "https://www.linkedin.com/in/nanang-safiu-ridho-804112248/";
 
