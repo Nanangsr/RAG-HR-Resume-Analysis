@@ -1,4 +1,3 @@
-/* src/App.css (FINAL RESPONSIVE & FULL-HEIGHT VERSION) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
@@ -17,12 +16,10 @@
   box-sizing: border-box;
 }
 
-/* === FONDASI FULL-HEIGHT (PERBAIKAN UTAMA) === */
 html, body, #root {
   margin: 0;
   padding: 0;
 }
-/* ============================================== */
 
 body {
   font-family: var(--font-sans);
@@ -30,15 +27,14 @@ body {
   color: var(--text-primary);
 }
 
-/* Aturan untuk wrapper utama aplikasi */
 .app-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Gunakan 100% bukan 100vh untuk konsistensi */
+  min-height: 100%; 
 }
 
 .main-content {
-  flex-grow: 1; /* Kunci #1: Membuat area ini meregang mengisi sisa ruang */
+  flex-grow: 1; 
 }
 
 .button {
@@ -46,7 +42,7 @@ body {
     padding: 0.8rem 1.75rem;
     border-radius: 8px;
     font-weight: 600;
-    text-decoration: none; /* Menghilangkan garis bawah */
+    text-decoration: none; 
     transition: all 0.2s ease-in-out;
     border: 1px solid transparent;
     cursor: pointer;
@@ -54,7 +50,7 @@ body {
 }
 .button-primary {
     background-color: var(--accent-primary);
-    color: #ffffff !important; /* !important untuk memastikan warna teks putih */
+    color: #ffffff !important; 
     box-shadow: 0 4px 14px 0 rgba(249, 115, 22, 0.3);
 }
 .button-primary:hover {
@@ -69,11 +65,9 @@ body {
 }
 
 footer {
-  /* Footer di-handle oleh komponennya sendiri */
-  flex-shrink: 0; /* Mencegah footer menyusut */
+  flex-shrink: 0; 
 }
 
-/* Layout Utama untuk Halaman Analisis */
 .analysis-page-main {
   display: grid;
   grid-template-columns: minmax(320px, 400px) 1fr;
@@ -107,7 +101,6 @@ footer {
   transition: width 0.2s;
 }
 
-/* Placeholder dan Status */
 .status-info, .results-placeholder {
   padding: 2rem;
   border-radius: 12px;
@@ -135,7 +128,6 @@ footer {
   color: #484f58;
 }
 
-/* --- Media Queries untuk Responsivitas Total --- */
 @media (max-width: 1200px) {
   .analysis-page-main {
     grid-template-columns: minmax(240px, 320px) 1fr;
