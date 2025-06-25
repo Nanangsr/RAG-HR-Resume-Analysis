@@ -1,5 +1,3 @@
-// src/components/AnalysisForm.jsx
-
 import React, { useState, useEffect } from 'react';
 import './AnalysisForm.css';
 
