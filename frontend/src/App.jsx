@@ -1,5 +1,3 @@
-// src/App.jsx (FINAL VERSION)
-
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import HomePage from './pages/HomePage.jsx';
@@ -9,7 +7,6 @@ import './App.css';
 
 function App() {
   return (
-    // Pembungkus utama untuk layout flexbox full-height
     <div className="app-wrapper">
       <Navbar />
       
