@@ -1,4 +1,3 @@
-# backend/app.py (FINAL - with Caching Fix)
 import os
 import json
 import logging
